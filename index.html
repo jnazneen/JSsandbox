@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <script type="text/javascript">
+	//Hello World
 	console.log("Welcome to this page")
 	
+//Variables and Types
 	var myNumber=4;
 	var myString="Variables are great.";
 	var myBoolean=false;
@@ -11,6 +13,7 @@
 	console.log("myString is equal to " + myString);
 	console.log("myBoolean is equal to " + myBoolean);
 
+//Arrays
 	var myArray = [];
 	myArray[0]="What is the meaning of life?";
 	myArray[2]=true;
@@ -18,5 +21,78 @@
 	console.log(myArray[0]);
 	console.log(myArray[1]);
 	console.log(myArray[2]);
+//Manipulating Arrays
+
+	var myArray = [true, "What is the meaning of life?"];
+	myArray.push(42);
+	myArray.shift();
+
+	console.log(myArray[0]);
+	console.log(myArray[1]);
+
+// Operators
+	var firstName = "John";
+	var lastName = "Smith";
+	var myNumber = 21;
+
+	// TODO: change the following code
+	var fullName = firstName + " " + lastName;
+	var meaningOfLife = myNumber * 2;
+
+	console.log("The meaning of life is " + meaningOfLife);
+
+
+	//Conditions
+	function checkNumber(myNumber)
+{
+    // TODO: write your code here
+    if (myNumber===42)
+    {
+        console.log("correct");
+    }
+    else
+    {
+        console.log("incorrect");
+    }
+}
+
+checkNumber(3);
+checkNumber(7);
+checkNumber(42);
+
+//Loops
+
+var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
+
+//TODO: modify this code
+for (var i = 0; i<myArray.length; i++)
+{
+    console.log(myArray[i]);
+}
+
+//Objects
+
+// TODO: change this code
+var person = {
+    firstName : "Jack",
+    lastName : "Smith",
+    age : 19,
+    employed : true
+}
+
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.age);
+console.log(person.employed);
+
+// TODO: change this code
+
+//Functions
+
+//Pop-up boxes
+
+//Callbacks
+
+//Arrow Functions
 
 </script>
