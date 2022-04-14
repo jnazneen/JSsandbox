@@ -1,64 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <script type="text/javascript">
-	//Hello World
+	//Hello World and Alerts
+	alert("You are a visitor to this page. Enter")
 	console.log("Welcome to this page")
 	
-//Variables and Types
+//Variables,Types Operators. Pop-Up Boxes and Conditions
 	var myNumber=4;
-	var myString="Variables are great.";
-	var myBoolean=false;
-	
-	console.log("myNumber is equal to"+ myNumber);
-	console.log("myString is equal to " + myString);
-	console.log("myBoolean is equal to " + myBoolean);
+	var myString="adventures";
 
-//Arrays
+
+
+	if (confirm ("Do you love this page?"))
+		{console.log("We love this page"+ myNumber + "ever");} else
+		{console.log ("We will make you love it")}
+
+	
+	console.log("We love this page"+ myNumber + "ever");
+	console.log("This page tells you about" + myString)
+
+//Arrays and Manipulating Arrays
 	var myArray = [];
-	myArray[0]="What is the meaning of life?";
-	myArray[2]=true;
-	myArray[1]=42
+	myArray[0]="1"
+	myArray[1]="Adventure Games";
+	myArray[2]="Adventure Videos";
+	myArray[3]="And anything else";
+	myArray[4]=2
+	myArray[5]=3
+
+	myArray.pop(4 +5)
+
 	console.log(myArray[0]);
 	console.log(myArray[1]);
 	console.log(myArray[2]);
-//Manipulating Arrays
-
-	var myArray = [true, "What is the meaning of life?"];
-	myArray.push(42);
-	myArray.shift();
-
-	console.log(myArray[0]);
-	console.log(myArray[1]);
-
-// Operators
-	var firstName = "John";
-	var lastName = "Smith";
-	var myNumber = 21;
-
-	// TODO: change the following code
-	var fullName = firstName + " " + lastName;
-	var meaningOfLife = myNumber * 2;
-
-	console.log("The meaning of life is " + meaningOfLife);
-
-
-	//Conditions
-	function checkNumber(myNumber)
-{
-    // TODO: write your code here
-    if (myNumber===42)
-    {
-        console.log("correct");
-    }
-    else
-    {
-        console.log("incorrect");
-    }
-}
-
-checkNumber(3);
-checkNumber(7);
-checkNumber(42);
+	console.log(myArray[3]);
+	console.log(myArray[4]);
+	console.log(myArray[5]);
 
 //Loops
 
@@ -71,21 +48,6 @@ for (var i = 0; i<myArray.length; i++)
 }
 
 //Objects
-
-// TODO: change this code
-var person = {
-    firstName : "Jack",
-    lastName : "Smith",
-    age : 19,
-    employed : true
-}
-
-console.log(person.firstName);
-console.log(person.lastName);
-console.log(person.age);
-console.log(person.employed);
-
-// TODO: change this code
 
 //Functions
 
