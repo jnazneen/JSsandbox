@@ -5,56 +5,79 @@
 	alert("You are a visitor to this page. Enter")
 	console.log("Welcome to this page")
 	
-//Variables,Types Operators. Pop-Up Boxes and Conditions
-	var myNumber=4;
+//Variables,Types Operators. Pop-Up Boxes, Conditions, Loops, Funtions and Callbacks. 
+	var myNumber= 4;
 	var myString="adventures";
+	var greet= function(user)
+	{ 
+		return "Bonjour, Bienvenue, Hola" + user;
+	}
 
+	for (var i=0; i < 2; i++)
 
+	setTimeout(function(user) 
+	{
+		console.log("Continue");
+	}, 10);
 
 	if (confirm ("Do you love this page?"))
 		{console.log("We love this page"+ myNumber + "ever");} else
 		{console.log ("We will make you love it")}
 
+
+
 	
-	console.log("We love this page"+ myNumber + "ever");
-	console.log("This page tells you about" + myString)
+	console.log("This page tells you about" + myString);
 
 //Arrays and Manipulating Arrays
 	var myArray = [];
 	myArray[0]="1"
 	myArray[1]="Adventure Games";
-	myArray[2]="Adventure Videos";
+	myArray[2]=2;
 	myArray[3]="And anything else";
-	myArray[4]=2
-	myArray[5]=3
+	myArray[4]="Adventure Videos";
+	
 
-	myArray.pop(4 +5)
+	myArray.pop(4 + 5)
 
 	console.log(myArray[0]);
 	console.log(myArray[1]);
 	console.log(myArray[2]);
 	console.log(myArray[3]);
-	console.log(myArray[4]);
-	console.log(myArray[5]);
-
-//Loops
-
-var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
-
-//TODO: modify this code
-for (var i = 0; i<myArray.length; i++)
-{
-    console.log(myArray[i]);
-}
-
-//Objects
-
-//Functions
-
-//Pop-up boxes
-
-//Callbacks
 
 //Arrow Functions
+//var hello
+//hello = (user) => {"Thank you for coming you may leave after this"};
+//console.log(hello("User"))
 
+const hello = (name) => { return "Thank you for coming. You may leave after this"; }
+
+console.log(hello("Person"));    
+
+const adventure = {
+  type: "flying ballons",
+  location: "pyramid" 
+};
+
+  console.log ("this adventure is called" + adventure.type + "and is in the" + adventure.location); 
 </script>
+
+<style type="text/css">
+	.box { 
+		margin: 10px;
+		text-align: center;
+		font-weight: bold;
+		color: royalblue;
+
+	 }
+</style>
+<head>
+	<div class="box">
+		<h1> Hello World and Alerts </h1>
+		<h1>Varaibles, Types, Operators, Pop-Up Boxes,Conditions, Loops and Callbacks</h1>
+		<h1>Arrays and Manipulating Arrays </h1>
+		<h1>Arrow Functions</h1>
+		<h1>Objects</h1>
+	</div>
+
+</head>
